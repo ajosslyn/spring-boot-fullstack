@@ -1,9 +1,6 @@
 name: CI - Build Backend
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -19,6 +16,7 @@ jobs:
             env:
               POSTGRES_USER: amigoscode
               POSTGRES_PASSWORD: password
+              POSTGRES_DB: customer
               PGDATA: /data/postgres@15
             ports:
             - 5432:5432
