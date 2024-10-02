@@ -17,9 +17,9 @@ jobs:
           postgres:
             image: postgres:15
             env:
-            POSTGRES_USER: amigoscode
-            POSTGRES_PASSWORD: password
-            PGDATA: /data/postgres@15
+              POSTGRES_USER: amigoscode
+              POSTGRES_PASSWORD: password
+              PGDATA: /data/postgres@15
             ports:
             - 5432:5432
             options: >-
